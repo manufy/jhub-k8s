@@ -1,3 +1,5 @@
+# Generated file from 
+
 PostgreSQL can be accessed via port 5432 on the following DNS names from within your cluster:
 
     pgdatabase-postgresql.pgdatabase.svc.cluster.local - Read/Write connection
