@@ -1,5 +1,6 @@
 /percona-cluster-pgsql-k8s/percona-postgresql-operator/
-/percona-cluster-pgsql-k8s/percona-postgresql-operator/.git
-/percona-cluster-pgsql-k8s/percona-postgresql-operator.github
-/~
+*.~
 /percona-cluster-pgsql-k8s/secrets.yaml 
+percona-cluster-pgsql-k8s/percona-postgresql-operator/.github/linters/go.mod
+percona-cluster-pgsql-k8s/percona-postgresql-operator/.github/pr-badge.yml
+percona-cluster-pgsql-k8s/percona-postgresql-operator/.github/workflows/reviewdog.yml

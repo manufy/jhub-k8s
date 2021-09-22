@@ -1,0 +1,6 @@
+#/bin/bash
+rm -rf ./percona-postgresql-operator
+rm -rf ./percona-postgresql-operator/.git
+rm -rf ./percona-postgresql-operator/.github
+git clone -b v0.2.0 https://github.com/percona/percona-postgresql-operator
+cd percona-postgresql-operator
