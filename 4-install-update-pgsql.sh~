@@ -1,0 +1,4 @@
+#/bin/bash
+helm upgrade --install pgdatabase --namespace pgdatabase bitnami/postgresql \
+--set postgresqlPassword=change_this_password \
+--set postgresqlDatabase=jhubdb
