@@ -26,16 +26,21 @@ singleuser:
 
   # sync with repo
   
-  lifecycleHooks:
-    postStart:
-      exec:
-        command:
-          [
-            "gitpuller",
-            "https://github.com/manufy/Finding-Hidden-Messages-in-DNA-Bioinformatics-I-",
-            "master",
-            "materials",
-          ]
+  # lifecycleHooks:
+  #  postStart:
+  #    exec:
+  #      command:
+  #        [
+  #          "gitpuller",
+  #          "https://github.com/manufy/Finding-Hidden-Messages-in-DNA-Bioinformatics-I-",
+  #          "master",
+  #          "materials",
+  #        ]
+hub:  
+  db:
+    url: postgres+psycopg2://postgres:change_this_password@pgdatabase-postgresql.pgdatabase.svc.cluster.local:5432/jhubdb
+    type: postgres
+    password: change_this_password
               
   profileList:
     - display_name: "Minimal environment"

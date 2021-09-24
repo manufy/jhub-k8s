@@ -9,6 +9,14 @@
 # Available chart versions: https://jupyterhub.github.io/helm-chart/
 #
 
+
+hub:
+  db:
+    url: postgres+psycopg2://postgres:change_this_password@pgdatabase-postgresql.pgdatabase.svc.cluster.local:5432/jhubdb
+    type: postgres
+    password: change_this_password
+    
+
 # use lab
 
 
@@ -36,7 +44,6 @@ singleuser:
   #          "master",
   #          "materials",
   #        ]
-              
   profileList:
     - display_name: "Minimal environment"
       description: "To avoid too much bells and whistles: Python."
